@@ -7,10 +7,10 @@ const VehicleCard = ({ vehicle }) => {
   return (
     <Link
       to={`/vehicles/${vehicle._id}`}
-      className="flex bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden h-[140px] sm:h-auto sm:flex-col hover:shadow-md transition-all group"
+      className="flex bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden h-[140px] sm:h-full sm:flex-col hover:shadow-md transition-all group"
     >
       {/* Image Section */}
-      <div className="relative w-[140px] sm:w-full sm:aspect-[4/3] flex-shrink-0 bg-gray-100">
+      <div className="relative w-[140px] sm:w-full sm:h-[220px] flex-shrink-0 bg-gray-100 overflow-hidden">
         <img
           src={vehicle.images?.[0] || 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=800&q=80'}
           alt={`${vehicle.brand} ${vehicle.model}`}
