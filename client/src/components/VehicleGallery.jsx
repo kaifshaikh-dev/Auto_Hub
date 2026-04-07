@@ -50,7 +50,7 @@ const VehicleGallery = ({ images, video }) => {
       <img 
         src={media.url || media} 
         alt="Vehicle" 
-        className={`w-full h-full object-cover ${className}`}
+        className={`w-full h-full object-contain ${className}`}
       />
     );
   };
