@@ -16,7 +16,7 @@ const VehicleGallery = ({ images, video }) => {
   // Fallback if no media
   if (!allMedia || allMedia.length === 0) {
     return (
-      <div className="aspect-[16/9] md:aspect-[21/9] bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center">
+      <div className="aspect-[4/3] md:aspect-[16/9] lg:aspect-[21/9] bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center w-full">
         <p className="text-gray-400">No images available</p>
       </div>
     );
@@ -59,7 +59,7 @@ const VehicleGallery = ({ images, video }) => {
     <div className="w-full">
       {/* Main Image */}
       <div 
-        className="relative aspect-[16/9] md:aspect-[21/9] bg-black rounded-xl overflow-hidden group cursor-pointer"
+        className="relative aspect-[4/3] md:aspect-[16/9] lg:aspect-[21/9] bg-black rounded-xl overflow-hidden group cursor-pointer w-full"
         onClick={() => setIsModalOpen(true)}
       >
         {renderMedia(allMedia[currentIndex])}
